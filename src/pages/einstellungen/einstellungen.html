@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title class="title">Einstellungen</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showScore()">
+        <ion-icon class="score" name="trophy"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<ion-item>
+  <ion-label>Wohnort</ion-label>
+  <ion-input color="mediumGrey" placholder="test" type="text" [(ngModel)]="location"></ion-input>
+</ion-item>
+<!-- TODO you can only choose between skins of the game if the toggle is checked true-->
+  <ion-item>
+    <ion-label>Spiel</ion-label>
+    <ion-toggle checked="true"></ion-toggle>
+  </ion-item>
+<!-- TODO check if the score of the user is high enough to unlock a skin, the first one is free -->
+    <ion-item>
+      <ion-label>Buche</ion-label>
+      <ion-radio value="Buche" checked="true"></ion-radio>
+    </ion-item>
+
+    <ion-item (click)="showAlert()">
+      <ion-label>Eiche</ion-label>
+      <ion-radio value="Eiche" disabled="true"></ion-radio>
+    </ion-item>
+    <ion-item (click)="showAlert()">
+      <ion-label>Tanne</ion-label>
+      <ion-radio value="Tanne" disabled="true"></ion-radio>
+    </ion-item>
+    <ion-item (click)="showAlert()">
+      <ion-label>Weide</ion-label>
+      <ion-radio value="Weide" disabled="true"></ion-radio>
+    </ion-item>
+    <ion-item (click)="showAlert()">
+      <ion-label>Winterwelt</ion-label>
+      <ion-radio value="Winterwelt" disabled="true"></ion-radio>
+    </ion-item>
+    <ion-item (click)="showAlert()">
+      <ion-label>Unterwasserwelt</ion-label>
+      <ion-radio value="Unterwasserwelt" disabled="true"></ion-radio>
+    </ion-item>
+    <ion-item (click)="reset()">
+      Reset
+    </ion-item>
+
+</ion-list>
+</ion-content>

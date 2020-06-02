@@ -1,0 +1,19 @@
+{
+  "name": "EvE",
+  "app_id": "",
+  "v2": true,
+  "typescript": true,
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ],
+  "proxies": [{
+    "path": "/api",
+    "proxyUrl": "https://test.eaternity.ch/api/recipes"
+    }]
+}

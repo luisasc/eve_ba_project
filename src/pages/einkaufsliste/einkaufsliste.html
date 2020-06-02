@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar color="einkaufslisteColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title class="title">Einkaufsliste</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showScore()">
+        <ion-icon class="score" name="trophy"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <style>
+  .bought{
+    text-decoration: line-through;
+  }
+  #newPoints{
+      text-decoration: none;
+    }
+  .boughtBackground {
+    background-color: #CCC;
+    color: #333;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .default-style{
+    height: 100%;
+    text-align: center;
+  }
+
+
+
+  </style>
+</ion-header>
+
+<ion-content>
+<!--  <ion-item id="shoppingListScore">Punkte für diesen Einkauf: {{shoppingListScore}}</ion-item> -->
+  <ion-item class="default-style" [ngClass] = "{'hide' : !isListEmpty}">
+    <h1>Hier ist nichts.</h1><button ion-button medium color="einkaufslisteColor"(click)="openSearch()">Suche etwas!</button>
+  </ion-item>
+
+  <ion-list [ngClass] = "{'hide' : isListEmpty}" no-padding>
+    <!-- horizontal sliding list -->
+    <div *ngFor ="let item of shoppingList" style="padding: 0">
+      <ion-item-sliding [ngClass] = "{'hide' : item.isBought}" #slidingItem>
+        <ion-item #listItem (click) = "open(slidingItem, listItem)">
+          <h2>{{item.title}} <span color="infoBadge">{{item.amount}}g</span></h2>
+          <ion-badge item-right color="infoBadge">{{item.co2value}}g CO<sub>2</sub>/kg</ion-badge>
+        </ion-item>
+        <!-- these options appear on the right side -->
+        <ion-item-options side="right">
+          <button ion-button color="einkaufslisteColor" (click)="markAsBought(item, slidingItem)">
+            <ion-icon name="cart"></ion-icon>
+          </button>
+          <button ion-button color="light" (click)="showInfo(item)">
+            <ion-icon name="information-circle"></ion-icon>
+          </button>
+          <button ion-button color="danger" (click)="deleteItem(item)" >
+            <ion-icon name="undo"></ion-icon>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+
+      <ion-item class="boughtBackground" [ngClass] = "{'hide' : !item.isBought}">
+        <ion-icon color = "danger" name="close-circle" item-left (click)="deleteItem(item)"></ion-icon>
+        <h2 class="bought">{{item.title}}</h2> <span class="bought" color="infoBadge">{{item.amount}}g</span>
+        <ion-badge id="newPoints" item-right color="infoBadge">{{item.newPoints}} Punkte</ion-badge>
+      </ion-item>
+      </div>
+      <br>
+    <button class="deleteEverything" ion-button small full color="danger" (click)="deleteEverything()">
+        Einkaufsliste leeren
+    </button>
+  </ion-list>
+</ion-content>

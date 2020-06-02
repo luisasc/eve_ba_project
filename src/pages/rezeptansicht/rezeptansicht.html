@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="rezepteColor">
+    <ion-title>{{ recipe.title }}</ion-title>
+  </ion-navbar>
+  <style>
+    .clicked{
+      color: red;
+    }
+  </style>
+</ion-header>
+
+<ion-content>
+  <ion-card class="imageContainer">
+      <img src="{{recipe.imageUrl}}"/>
+      <!-- TODO when clicked, fill out the heart icon
+      when the heart is clicked, add to the category gemerkt    -->
+        <ion-icon name="heart-outline" id="heart" (click)="heartClicked()" padding></ion-icon>
+      <ion-card-content>
+      <ion-card-title>{{recipe.title}}</ion-card-title>
+        <ion-list no-padding>
+          <ion-list-header>
+            Zutaten
+            <ion-icon name="add" id="addAllIngredients" (click)="addAllIngredients(recipe.recipeIngredients)"></ion-icon>
+          </ion-list-header>
+          <!-- horizontal sliding list -->
+          <ion-item-sliding no-padding *ngFor = "let ingredient of recipe.recipeIngredients">
+            <ion-item id="zutat" no-padding>
+              <h6>{{ingredient.amount}}g {{ingredient.title}}</h6>
+               <ion-badge item-right color="infoBadge">{{ingredient.co2value}}g CO<sub>2</sub>/kg</ion-badge>
+            </ion-item>
+            <!-- these options appear on the right side -->
+            <ion-item-options side="right">
+              <button ion-button color="einkaufslisteColor" (click)="markAsBought(ingredient)">
+                <ion-icon name="cart"></ion-icon>
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+        <div method style="line-height: 1.6" padding>{{recipe.method}}</div>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>

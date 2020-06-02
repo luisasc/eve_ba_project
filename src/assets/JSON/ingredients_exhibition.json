@@ -1,0 +1,290 @@
+[
+  {
+    "ID": "1",
+    "German": "Rind (Filet)",
+    "Type": "Fleisch und Fisch",
+    "co2Value": "55765"
+  },
+  {
+    "ID": "2",
+    "German": "Milch (UHT, Voll)",
+    "Type": "Milchprodukte und Eier",
+    "co2Value": "1857"
+  },
+  {
+    "ID": "3",
+    "German": "Käse (Frisch)",
+    "Type": "Milchprodukte und Eier",
+    "co2Value": "3248"
+  },
+  {
+    "ID": "4",
+    "German": "Haferdrink",
+    "Type": "Getreideprodukte",
+    "co2Value": "413"
+  },
+  {
+    "ID": "5",
+    "German": "Brot",
+    "Type": "Brot und Gebäck",
+    "co2Value": "1173"
+  },
+  {
+    "ID": "6",
+    "German": "Hokkaidō",
+    "Type": "Gemüse",
+    "co2Value": "354"
+  },
+  {
+    "ID": "7",
+    "German": "Knoblauch",
+    "Type": "Gemüse",
+    "co2Value": "1170"
+  },
+  {
+    "ID": "8",
+    "German": "Ingwer",
+    "Type": "Gemüse",
+    "co2Value": "603"
+  },
+  {
+    "ID": "9",
+    "German": "Kurkuma",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "3723"
+  },
+  {
+    "ID": "10",
+    "German": "Koriander",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "3733"
+  },
+  {
+    "ID": "11",
+    "German": "Zucker (Zuckerrüben)",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "335"
+  },
+  {
+    "ID": "12",
+    "German": "Salz",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "603"
+  },
+  {
+    "ID": "13",
+    "German": "Kokosnussmilch",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "1527"
+  },
+  {
+    "ID": "14",
+    "German": "Wasser",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "16"
+  },
+  {
+    "ID": "15",
+    "German": "Karotten",
+    "Type": "Gemüse",
+    "co2Value": "305"
+  },
+  {
+    "ID": "16",
+    "German": "Peperoni",
+    "Type": "Gemüse",
+    "co2Value": "7008"
+  },
+  {
+    "ID": "17",
+    "German": "Zwiebeln",
+    "Type": "Gemüse",
+    "co2Value": "365"
+  },
+  {
+    "ID": "18",
+    "German": "Champignons",
+    "Type": "Gemüse",
+    "co2Value": "2790"
+  },
+  {
+    "ID": "19",
+    "German": "Räuchertofu",
+    "Type": "Getreideprodukte",
+    "co2Value": "783"
+  },
+  {
+    "ID": "20",
+    "German": "Tofu",
+    "Type": "Getreideprodukte",
+    "co2Value": "1008"
+  },
+  {
+    "ID": "21",
+    "German": "Kidneybohnen",
+    "Type": "Getreideprodukte",
+    "co2Value": "1302"
+  },
+  {
+    "ID": "22",
+    "German": "Süssmais",
+    "Type": "Gemüse",
+    "co2Value": "839"
+  },
+  {
+    "ID": "23",
+    "German": "Tomaten",
+    "Type": "Gemüse",
+    "co2Value": "547"
+  },
+  {
+    "ID": "24",
+    "German": "Soja Sauce",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "1633"
+  },
+  {
+    "ID": "25",
+    "German": "Zitronensaft",
+    "Type": "Gemüse",
+    "co2Value": "1953"
+  },
+  {
+    "ID": "26",
+    "German": "Essig",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "3203"
+  },
+  {
+    "ID": "27",
+    "German": "Senf",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "1003"
+  },
+  {
+    "ID": "28",
+    "German": "Chili",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "8246"
+  },
+  {
+    "ID": "29",
+    "German": "Pfeffer",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "603"
+  },
+  {
+    "ID": "30",
+    "German": "Oregano",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "8016"
+  },
+  {
+    "ID": "31",
+    "German": "Basilikum",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "8016"
+  },
+  {
+    "ID": "32",
+    "German": "Hefe",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "1037"
+  },
+  {
+    "ID": "33",
+    "German": "Weissmehl (Weizen)",
+    "Type": "Getreideprodukte",
+    "co2Value": "517"
+  },
+  {
+    "ID": "34",
+    "German": "Feta",
+    "Type": "Milchprodukte und Eier",
+    "co2Value": "3546"
+  },
+  {
+    "ID": "35",
+    "German": "Feigen",
+    "Type": "Obst",
+    "co2Value": "8236"
+  },
+  {
+    "ID": "36",
+    "German": "Himbeeren",
+    "Type": "Obst",
+    "co2Value": "415"
+  },
+  {
+    "ID": "37",
+    "German": "Apfel",
+    "Type": "Obst",
+    "co2Value": "486"
+  },
+  {
+    "ID": "38",
+    "German": "Orangen",
+    "Type": "Obst",
+    "co2Value": "486"
+  },
+  {
+    "ID": "39",
+    "German": "Kürbis",
+    "Type": "Gemüse",
+    "co2Value": "1646"
+  },
+  {
+    "ID": "40",
+    "German": "Kartoffeln",
+    "Type": "Gemüse",
+    "co2Value": "105"
+  },
+  {
+    "ID": "41",
+    "German": "Zucchini",
+    "Type": "Gemüse",
+    "co2Value": "457"
+  },
+  {
+    "ID": "42",
+    "German": "Süsskartoffeln",
+    "Type": "Gemüse",
+    "co2Value": "653"
+  },
+  {
+    "ID": "43",
+    "German": "Rapsöl (Roh)",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "1606"
+  },
+  {
+    "ID": "44",
+    "German": "Paprika Edelsüss",
+    "Type": "Zutaten und Gewürze",
+    "co2Value": "603"
+  },
+  {
+    "ID": "45",
+    "German": "Schwein (Filet)",
+    "Type": "Fleisch und Fisch",
+    "co2Value": "21395"
+  },
+  {
+    "ID": "46",
+    "German": "Huhn",
+    "Type": "Fleisch und Fisch",
+    "co2Value": "4466"
+  },
+  {
+    "ID": "47",
+    "German": "Fischeier",
+    "Type": "Fleisch und Fisch",
+    "co2Value": "30906"
+  },
+  {
+    "ID": "48",
+    "German": "Roter Soldatenfisch",
+    "Type": "Fleisch und Fisch",
+    "co2Value": "13106"
+  }
+]

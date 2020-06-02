@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="rezepteColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title class="title">Rezepte</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showScore()">
+        <ion-icon class="score" name="trophy"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (input)="search($event)"></ion-searchbar>
+    <div class="card-background-page" >
+        <ion-card *ngFor = "let recipe of foundRecipes" (click)="openRecipe(recipe)">
+          <ion-card-content no-padding >
+          <img src="{{recipe.imageUrl}}"/>
+            <div class="card-title" padding>
+              {{recipe.title}}
+              <ion-badge item-right color="infoBadge">{{recipe.co2}}g CO<sub>2</sub>/kg</ion-badge>
+            </div>
+          </ion-card-content>
+        </ion-card>
+    </div>
+</ion-content>

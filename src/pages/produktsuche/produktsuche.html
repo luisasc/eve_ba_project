@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="produktsucheColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title class="title">Produktsuche</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showScore()">
+        <ion-icon class="score" name="trophy"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (input)="search($event)"></ion-searchbar>
+   <ion-item-group *ngFor = "let itemgroup of groupedItems">
+   <ion-item-divider color="light">{{ itemgroup.type }}</ion-item-divider>
+   <ion-item (click)="itemClicked(item)" *ngFor="let item of itemgroup.items">
+     {{ item.title }}
+       <ion-badge item-right color="infoBadge">{{item.co2value}}g CO<sub>2</sub>/kg</ion-badge>
+   </ion-item>
+ </ion-item-group>
+</ion-content>

@@ -1,0 +1,32 @@
+page-rezeptansicht {
+
+  #heart {
+    color: white;
+    position: absolute;
+    top: 1px;
+    margin-right: 10px;
+  //  left: 795px;
+  }
+
+/*  .heart-clicked {
+    color: red;
+    position: absolute;
+    top: 1px;
+    left: 295px;
+  }
+  */
+  .imageContainer {
+    position: relative;
+  }
+
+  #addAllIngredients {
+    position: absolute;
+    right: 10px;
+
+  }
+
+  .method {
+    font-size: 1em;
+    line-height:1.5;
+  }
+}
